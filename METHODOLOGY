@@ -1,0 +1,37 @@
+⚙️ METHODOLOGY
+1. Object-Oriented Approach
+A class Book is used to represent each book
+Encapsulation is used (private data + public methods)
+2. File Handling (Binary Files)
+Data stored in library.dat
+Uses:
+ofstream → write data
+ifstream → read data
+fstream → update data
+Records stored using:
+write() and read() functions
+3. Persistent Storage
+Data is saved permanently in files
+Even after program closes, records remain
+4. Sequential Access
+Records are accessed one by one
+Searching is done using linear search
+5. Update Technique
+For modifying records:
+File pointer repositioned using seekp()
+Overwrites existing record
+6. Deletion Strategy
+Uses temporary file method
+Safer approach:
+Copy valid records → temp file
+Replace original file
+7. User Interaction
+Menu-driven program
+Uses loop (do-while) for continuous execution
+8. Data Members Handling
+bookID → Unique identifier
+title, author → Stored as character arrays
+issued → Boolean status tracking
+
+
+Just tell me 👍
