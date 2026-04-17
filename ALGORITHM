@@ -1,0 +1,70 @@
+ALGORITHM
+Main Algorithm (Program Flow)
+Start
+Display menu:
+Add Book
+Display All Books
+Search Book
+Delete Book
+Issue Book
+Return Book
+Exit
+Read user choice
+Perform operation based on choice:
+If 1 → Add Book
+If 2 → Display Books
+If 3 → Search Book
+If 4 → Delete Book
+If 5 → Issue Book
+If 6 → Return Book
+If 0 → Exit
+Repeat steps 2–4 until user chooses Exit
+End
+📘 Sub-Algorithms
+1. Add Book
+Create Book object
+Input Book ID, Title, Author
+Set issued = false
+Open file (library.dat) in append mode
+Write object into file
+Close file
+2. Display All Books
+Open file in read mode
+If file not found → show message
+Read each record
+Display book details
+Close file
+3. Search Book
+Input Book ID
+Open file
+Read records one by one
+If ID matches → display book
+If not found → show message
+Close file
+4. Delete Book
+Input Book ID
+Open original file (read mode)
+Open temporary file (write mode)
+Copy all records except matching ID
+Close files
+Delete original file
+Rename temp file to original
+Display result
+5. Issue Book
+Input Book ID
+Open file in read/write mode
+Search record
+If found and not issued:
+Mark as issued
+Rewrite record in same position
+Else show error
+Close file
+6. Return Book
+Input Book ID
+Open file in read/write mode
+Search record
+If found and issued:
+Mark as returned
+Rewrite record
+Else show error
+Close file
