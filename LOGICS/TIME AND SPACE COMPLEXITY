@@ -1,0 +1,81 @@
+🔹 1. addBook()
+
+
+Writes one record at the end of the file.
+
+
+Time Complexity: O(1) (append operation)
+
+
+Space Complexity: O(1)
+
+
+
+🔹 2. displayBooks()
+
+
+Reads all books sequentially.
+
+
+Time Complexity: O(n)
+
+
+Space Complexity: O(1) (only one object in memory at a time)
+
+
+
+🔹 3. searchBook()
+
+
+Linear search through file.
+
+
+Time Complexity: O(n) (worst case: book at end or not found)
+
+
+Space Complexity: O(1)
+
+
+
+🔹 4. deleteBook()
+
+
+Reads all records and rewrites except the deleted one.
+
+
+Time Complexity: O(n)
+
+
+Space Complexity: O(1) (uses temp file, not extra memory)
+
+
+
+🔹 5. issueBook()
+
+
+Searches and updates one record.
+
+
+Time Complexity: O(n)
+
+
+Space Complexity: O(1)
+
+
+
+🔹 6. returnBook()
+
+
+Same as issueBook.
+
+
+Time Complexity: O(n)
+
+
+Space Complexity: O(1)
+
+
+
+
+
+If you want, I can help you optimize this code to O(log n) or O(1) with better design.
